@@ -1,1 +1,23 @@
-a)Belirli Kolonlarİ Seme‚alİßanlarİn sadece FirstName, LastName ve Salary bilgilerini getiren bir SQL sorgusu yazİnİz.select firstname,lastname ,salary from employees*select komutuyla gšrŸnmesi gereken kolonlarİ setim from komutla talep edilen tabloyu belirledim.b) DISTINCT Komutu ile Tekrarlarİ …nleme ‚alİßanlarİn alİßtİklarİ departmanlarİ benzersiz olarak listeleyen bir SQL sorgusu yazİnİz.select distinct departmentid from departmanc) Belirli Bir Departmana Ait ‚alİßanlarİ ListelemeSadece IT departmanİnda alİßanlarİn bilgilerini getiren bir SQL sorgusu yazİnİz.select * from employees where departmentid =1;*empoloyees tablosunu seerek where ßart komutuyla talep edilen depatmanİn gšrŸnmesini saÛladİm.d)Maaßa Gšre Sİralama‚alİßanlarİ maaßlarİna gšre bŸyŸkten kŸŸÛe sİralayan bir SQL sorgusu yazİnİz.select * from employeesorder by 6 ascorder by komutuyla gruplama yaparak 6 (6.kolonu baz almasİnİ talep ettim yani maaß (salary) kolonunu baz almasİnİ saÛladİm) asc komutuyla kŸŸkten bŸyŸÛe sİralmasİnİ saÛladİm.e) Kolonlarİ Birleßtirme (Concatenation) ‚alİßanlarİn FirstName ve LastName alanlarİnİ birleßtirerek, tam adlarİnİ ieren yeni bir kolon olußturan bir SQL sorgusu yazİnİz.select concat(firstname,' ' ,lastname) as fullname from employees
+
+a)FirstName, LastName ve Salary bilgilerini getiren bir SQL sorgusu yazÄ°nÄ°z.
+
+select firstname,lastname ,salary from employees
+
+*select komutuyla gorunmesi gereken kolonlari from komutla talep edilen tabloyu belirledim.
+
+b) DISTINCT Komutu ile Tekrarlar
+epartmanlarÄ° benzersiz olarak listeleyen bir SQL sorgusu yazÄ°nÄ°z.
+
+--select distinct departmentid from departman
+
+c) select * from employees where departmentid =1;
+
+*empoloyees tablosunu secerek where sart komutuyla talep edilen depatmanÄ°n gorunmesini sagladim
+
+d) select * from employees
+   order by 6 asc
+
+order by komutuyla gruplama yaparak 6 (6.kolonu baz almasÄ°nÄ° talep ettim yani maas (salary) kolonunu baz almasini sagladim) asc komutuyla kÃ¼cÃ¼kten bÃ¼yÃ¼ge siralamasini gerceklestirdim.
+
+e)select concat(firstname,' ' ,lastname) as fullname from employees
+concat komutuyla isim ve soyisimi birleÅŸtirdim as komutuyla yeni kolonun fullname adÄ±nÄ± almasÄ±nÄ± sagladim
